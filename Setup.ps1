@@ -7,17 +7,19 @@
         Big thanks to https://github.com/toksaitov/AndroidStudioPortable
  #>
 
+$ScriptRoot = Split-Path -Parent -Path $MyInvocation.MyCommand.Definition
+
 #
 # Definitions
 #
 
-. '.\Definitions.ps1'
+. ($ScriptRoot + '\Definitions.ps1')
 
 #
 # Helpers
 #
 
-. '.\Helpers.ps1'
+. ($ScriptRoot + '\Helpers.ps1')
 
 #
 # Steps
